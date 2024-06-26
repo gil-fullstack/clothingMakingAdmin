@@ -1,0 +1,92 @@
+# User-specific files
+*.iml
+.idea/libraries
+.idea/tasks.xml
+.idea/jsLibraryMappings.xml
+.idea/jarRepositories.xml
+.idea/modules.xml
+.idea/project.iml
+
+# Miscellaneous
+.DS_Store
+*.swp
+*.swo
+
+# Build generated folders
+/captures/
+/output/
+/build/
+
+# Gradle caches
+.gradle/
+/gradle/
+/build/
+
+# Kotlin/JS specific
+out/
+
+# macOS specific
+*.DS_Store
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Android Studio
+.idea
+*.iws
+.idea/workspace.xml
+.idea/libraries
+.idea/tasks.xml
+.idea/dictionaries
+.idea/misc.xml
+.idea/modules.xml
+
+# Exclude all test result files
+**/test-results/
+
+# Exclude lint, instrumented test results
+**/lint-results.xml
+**/lint-results.html
+**/lint-results.txt
+
+# Exclude all .iml files and auto-generated folders
+*.iml
+/.idea/
+*.ipr
+*.iws
+
+# Android/IntelliJ IDEA
+*.iml
+*.ipr
+*.iws
+.idea/
+.idea/
+.idea/
+.gradle/
+local.properties
+*.log
+.idea/libraries/
+.idea/workspace.xml
+.idea/modules.xml
+.idea/.name
+.idea/misc.xml
+.idea/dictionaries
+.idea/tasks.xml
+.idea/compiler.xml
+.idea/jsLibraryMappings.xml
+.idea/encodings.xml
+
+# Exclude all the Java classes and binaries
+**/build/
+**/out/
+
+# Android lint
+lint/intermediates/
+lint/generated/
+lint/tmp/
+
+# Jetpack Compose related
+*/compose/
+
