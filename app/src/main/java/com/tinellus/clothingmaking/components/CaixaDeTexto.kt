@@ -3,12 +3,14 @@ package com.tinellus.clothingmaking.components
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.material3.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -19,7 +21,8 @@ fun CaixaDeTexto(
     onValueChange: (String) -> Unit,
     modifier: Modifier,
     label: String,
-    maxLines: Int
+    maxLines: Int,
+    keyboardType: KeyboardType
 ){
 
    OutlinedTextField(
@@ -40,18 +43,10 @@ fun CaixaDeTexto(
            cursorColor = Color.Green,
            errorCursorColor = Color.Magenta,
        ),
-       shape = RoundedCornerShape(20.dp)
+       shape = RoundedCornerShape(20.dp),
+       keyboardOptions = KeyboardOptions(
+           keyboardType = keyboardType
+       )
    )
 }
 
-@Composable
-@Preview
-private fun CaixaDeTextoPreview(){
-    CaixaDeTexto(
-        value = "Gilvan",
-        onValueChange = {},
-        modifier = Modifier.background(Color.White).fillMaxWidth(),
-        label = "Descrição",
-        maxLines = 1
-        )
-}
