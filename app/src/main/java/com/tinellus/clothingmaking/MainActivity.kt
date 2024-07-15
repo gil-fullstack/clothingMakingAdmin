@@ -9,6 +9,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.tinellus.clothingmaking.ui.theme.ClothingMakingTheme
+import com.tinellus.clothingmaking.view.LoginScreen
 import com.tinellus.clothingmaking.view.MyMainView
 import com.tinellus.clothingmaking.view.SalvarTarefas
 
@@ -21,7 +22,12 @@ class MainActivity : ComponentActivity() {
             ClothingMakingTheme {
                 val navController = rememberNavController()
 
-                NavHost(navController = navController, startDestination = "myMainView"){
+                NavHost(navController = navController, startDestination = "loginScreen"){
+                    composable(
+                        route = "loginScreen"
+                    ){
+                        LoginScreen(navController)
+                    }
                     composable(
                         route = "myMainView"
                     ){

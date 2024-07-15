@@ -30,7 +30,7 @@ fun CaixaDeTexto(
            Text(text = label)
        },
        maxLines = maxLines,
-       textStyle = TextStyle(color = Color.Gray, fontSize = 20.sp),
+       textStyle = TextStyle(color = Color.Red, fontSize = 20.sp),
 
        colors = TextFieldDefaults.textFieldColors(
            disabledTextColor = Color.Gray,
